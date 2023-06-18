@@ -4,17 +4,18 @@
         <mat-icon
             [matBadge]="1"
             matBadgeColor="warn"
-    >shopping_cart</mat-icon>
+        >shopping_cart</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
         <div class="p-3 divide-y divide-solid">
-            <div class="pb-3 flex justify-between"></div>
-            <span class="mr-16">1 Item</span>
-            <a routerLink="cart" mat-menu-item>View Cart</a>
-        </div>
-        <div class="flex justify-between font-light mb-2">
-            Keyboard x 1
-            <span class="font-bold">{{ '150' | currency }}</span>
+            <div class="pb-3 flex justify-between">
+                <span class="mr-16">1 Item</span>
+                <a routerLink="cart">View Cart</a>
+            </div>
+            <div class="flex justify-between font-light mb-2">
+                Keyboard x 1
+                <span class="font-bold">{{ '150' | currency }}</span>
+            </div>
         </div>
     </mat-menu>
 </mat-toolbar>

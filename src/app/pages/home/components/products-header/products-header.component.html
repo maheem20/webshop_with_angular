@@ -1,10 +1,10 @@
 <mat-card class="mb-4">
     <div>
-        <button mat-button>
+        <button mat-button [mat-menu-trigger-for]="sortByMenu">
             Sort by
         </button>
-        <mat-menu>
-
+        <mat-menu #sortByMenu="matMenu">
+            
         </mat-menu>
     </div>
 </mat-card>

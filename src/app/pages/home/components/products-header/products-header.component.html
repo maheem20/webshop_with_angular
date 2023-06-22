@@ -1,7 +1,7 @@
 <mat-card class="mb-4">
     <div>
         <button mat-button [mat-menu-trigger-for]="sortByMenu">
-            Sort by
+            Sort by {{ sort }}
         </button>
         <mat-menu #sortByMenu="matMenu">
             <button mat-menu-item>Descending</button>

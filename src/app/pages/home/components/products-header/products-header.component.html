@@ -4,8 +4,8 @@
             Sort by {{ sort }}
         </button>
         <mat-menu #sortByMenu="matMenu">
-            <button mat-menu-item>Descending</button>
-            <button mat-menu-item>Ascending</button>
+            <button (click)="onSortUpdated('Descending')" mat-menu-item>Descending</button>
+            <button (click)="onSortUpdated('Ascending')" mat-menu-item>Ascending</button>
         </mat-menu>
     </div>
 </mat-card>

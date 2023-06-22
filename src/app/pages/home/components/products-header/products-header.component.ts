@@ -11,4 +11,8 @@ export class ProductsHeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  onSortUpdated(newSort: string): void {
+    this.sort = newSort;
+  }
 }

@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-products-header',
   templateUrl: './products-header.component.html'
 })
-export class ProductsHeaderComponent {
-
+export class ProductsHeaderComponent implements OnInit {
+  sort = 'desc';
 }

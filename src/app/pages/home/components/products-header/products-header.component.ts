@@ -21,4 +21,8 @@ export class ProductsHeaderComponent implements OnInit {
   onItemsUpdated(count: number): void {
     this.itemsShowCount = count;
   }
+
+  onColumnsCountUpdated(colsNum: number): void {
+    this.columnsCountChange.emit(colsNum);
+  }
 }

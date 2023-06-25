@@ -22,7 +22,7 @@ export class ProductsHeaderComponent implements OnInit {
     this.itemsShowCount = count;
   }
 
-  onColumnsCountUpdated(colsNum: number): void {
+  onColumnsUpdated(colsNum: number): void {
     this.columnsCountChange.emit(colsNum);
   }
 }

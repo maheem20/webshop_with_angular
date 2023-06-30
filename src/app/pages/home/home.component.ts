@@ -5,10 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html'
 })
 export class HomeComponent {
-
+  cols = 3;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onColumnsCountChange(colsNum: number): void {
+    this.cols = colsNum;
+  }
 }

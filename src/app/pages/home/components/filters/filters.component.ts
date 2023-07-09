@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'filters.component.html'
 })
 export class FiltersComponent implements OnInit {
+  categories = ['shoes', 'sports'];
 
   constructor() { }
 

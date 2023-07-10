@@ -12,4 +12,6 @@ export class FiltersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onShowCategory(category: string): void {
+  }
 }

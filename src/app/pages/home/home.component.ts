@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   cols = 3;
+  category: string | undefined;
+
   constructor() { }
 
   ngOnInit(): void {

@@ -9,7 +9,8 @@ class="min-h-full max-w-7xl mx-auto border-x"
         <app-products-header (columnsCountChange)="onColumnsCountChange($event)"></app-products-header>
         <mat-grid-list
             gutterSize="16"
-            [cols]="cols">
+            [cols]="cols"
+            [rowHeight]="rowHeight>
 
         </mat-grid-list>
     </mat-drawer-content>

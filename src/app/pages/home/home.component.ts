@@ -17,5 +17,7 @@ export class HomeComponent {
     this.cols = colsNum;
   }
 
-  onShowCategory(newCategory: string): void { }
+  onShowCategory(newCategory: string): void {
+    this.category = newCategory;
+  }
 }

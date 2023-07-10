@@ -7,6 +7,7 @@ const ROWS_HEIGHT: { [id: number]: number } = { 1: 400, 3: 335, 4: 350 };
 })
 export class HomeComponent {
   cols = 3;
+  rowsHeight = ROWS_HEIGHT[this.cols];
   category: string | undefined;
 
   constructor() { }

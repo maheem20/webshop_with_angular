@@ -14,4 +14,6 @@ export class HomeComponent {
   onColumnsCountChange(colsNum: number): void {
     this.cols = colsNum;
   }
+
+  onShowCategory(newCategory: string): void { }
 }

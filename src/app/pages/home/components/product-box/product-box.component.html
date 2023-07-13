@@ -4,7 +4,8 @@
             [ngClass]="{'h-200px': !fullWidthMode, 'h-[350px]': fullWidthMode}"
             src="https://via.placeholder.com/150"
         >
-        <div class="w-full">
+        <div class="w-full"
+            [ngClass]="{'px-8 flex flex-col justify-between': fullWidthMode}">
             <div>
                 <h5>Shoes</h5>
                 <p class="truncate"

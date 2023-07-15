@@ -7,6 +7,8 @@ import { Cart } from 'src/app/models/cart.model';
 })
 export class CartComponent implements OnInit {
 
+  cart: Cart = { items: [] };
+
   constructor() { }
 
   ngOnInit(): void {

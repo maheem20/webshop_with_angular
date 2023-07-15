@@ -18,6 +18,14 @@ export class CartComponent implements OnInit {
   };
 
   dataSource: Array<CartItem> = [];
+  displayedColumns: Array<string> = [
+    'product',
+    'name',
+    'price',
+    'quantity',
+    'total',
+    'actions'
+  ];
 
   constructor() { }
 

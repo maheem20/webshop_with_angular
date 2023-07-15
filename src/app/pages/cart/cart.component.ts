@@ -7,7 +7,15 @@ import { Cart } from 'src/app/models/cart.model';
 })
 export class CartComponent implements OnInit {
 
-  cart: Cart = { items: [] };
+  cart: Cart = {
+    items: [{
+      product: 'https://via.placeholder.com/150',
+      name: 'sneakers',
+      price: 150,
+      quantity: 1,
+      id: 1
+    }]
+  };
 
   constructor() { }
 

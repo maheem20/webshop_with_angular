@@ -1,7 +1,7 @@
 <mat-card class="max-w-7xl mx-auto" *ngIf="cart.items.length">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 w-full">
         <ng-container matColumnDef="product">
-            <th mat-header-cell>Product</th>
+            <th mat-header-cell *matHeaderRowDef>Product</th>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

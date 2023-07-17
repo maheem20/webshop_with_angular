@@ -30,6 +30,7 @@ export class CartComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.dataSource = this.cart.items;
   }
 
 }

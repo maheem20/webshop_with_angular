@@ -43,7 +43,12 @@
             </td>
         </ng-container>
         <ng-container matColumnDef="action">
-            <th mat-header-cell *matHeaderRowDef></th>
+            <th mat-header-cell *matHeaderRowDef>
+                <button mat-raised-button color="warn"
+                class="float-right">
+                    Clear all
+                </button>
+            </th>
             <td mat-cell *matCellDef="let element"></td>
             <td mat-footer-cell *matFooterRowDef></td>
         </ng-container>

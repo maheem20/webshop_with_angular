@@ -38,6 +38,7 @@
             </td>
             <td mat-footer-cell *matFooterRowDef>
                 <span class="font-bold py-5 block"></span>
+                {{ getTotal(cart.items) | currency  }}
             </td>
         </ng-container>
         

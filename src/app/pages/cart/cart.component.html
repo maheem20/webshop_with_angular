@@ -13,7 +13,7 @@
         <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderRowDef>Name</th>
             <td mat-cell *matCellDef="let element">
-                {{element.name}}
+                <p class="truncate max-w-xs">{{element.name}}</p>
             </td>
             <td mat-footer-cell *matFooterRowDef></td>
         </ng-container>

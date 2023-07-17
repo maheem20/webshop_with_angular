@@ -33,6 +33,6 @@ export class CartComponent implements OnInit {
     this.dataSource = this.cart.items;
   }
 
-  getTotal() { }
+  getTotal(items: Array<CartItem>): number { }
 
 }

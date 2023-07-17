@@ -24,7 +24,7 @@ export class CartComponent implements OnInit {
     'price',
     'quantity',
     'total',
-    'actions'
+    'action'
   ];
 
   constructor() { }

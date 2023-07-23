@@ -1,7 +1,7 @@
 <mat-card class="max-w-7xl mx-auto" *ngIf="cart.items.length">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 w-full">
         <ng-container matColumnDef="product">
-            <th mat-header-cell *matHeaderRowDef>Product</th>
+            <th mat-header-cell *matHeaderCellDef>Product</th>
             <td mat-cell *matCellDef="let element">
                 <img src="{{ element.product }}" alt="product" class="w-[100px] my-5">
             </td>
@@ -11,28 +11,28 @@
             </td>
         </ng-container>
         <ng-container matColumnDef="name">
-            <th mat-header-cell *matHeaderRowDef>Name</th>
+            <th mat-header-cell *matHeaderCellDef>Name</th>
             <td mat-cell *matCellDef="let element">
                 <p class="truncate max-w-xs">{{ element.name }}</p>
             </td>
             <td mat-footer-cell *matFooterRowDef></td>
         </ng-container>
         <ng-container matColumnDef="price">
-            <th mat-header-cell *matHeaderRowDef>Price</th>
+            <th mat-header-cell *matHeaderCellDef>Price</th>
             <td mat-cell *matCellDef="let element">
                 {{ element.price | currency }}
             </td>
             <td mat-footer-cell *matFooterRowDef></td>
         </ng-container>
         <ng-container matColumnDef="quantity">
-            <th mat-header-cell *matHeaderRowDef>Quantity</th>
+            <th mat-header-cell *matHeaderCellDef>Quantity</th>
             <td mat-cell *matCellDef="let element">
                 {{ element.quantity }}
             </td>
             <td mat-footer-cell *matFooterRowDef></td>
         </ng-container>
         <ng-container matColumnDef="total">
-            <th mat-header-cell *matHeaderRowDef>Total</th>
+            <th mat-header-cell *matHeaderCellDef>Total</th>
             <td mat-cell *matCellDef="let element">
                 {{ element.total }}
             </td>
@@ -43,7 +43,7 @@
             </td>
         </ng-container>
         <ng-container matColumnDef="action">
-            <th mat-header-cell *matHeaderRowDef>
+            <th mat-header-cell *matHeaderCellDef>
                 <button mat-raised-button color="warn"
                 class="float-right">
                     Clear all

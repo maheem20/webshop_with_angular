@@ -38,8 +38,8 @@
             </td>
             <td mat-footer-cell *matFooterRowDef>
                 <span class="font-bold py-5 block">
-                {{ getTotal(cart.items) | currency  }}
-            </span>
+                    {{ getTotal(cart.items) | currency }}
+                </span>
             </td>
         </ng-container>
         <ng-container matColumnDef="action">
@@ -69,4 +69,4 @@
         <button mat-raised-button routerLink="/home">Start shopping
         </button>
     </p>
- 
+</mat-card>

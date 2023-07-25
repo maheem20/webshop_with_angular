@@ -20,5 +20,6 @@ export class CartService {
     } else {
       items.push(item);
     }
+    this.cart.next({ items });
   }
 }

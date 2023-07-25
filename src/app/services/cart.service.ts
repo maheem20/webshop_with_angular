@@ -12,5 +12,5 @@ export class CartService {
 
   constructor(private _snackbar: MatSnackBar) { }
 
-  addToCart(): void { }
+  addToCart(item: CartItem): void { }
 }

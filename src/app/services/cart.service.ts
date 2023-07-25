@@ -17,6 +17,8 @@ export class CartService {
     const itemInCart = items.find((_item) => _item.id === item.id);
     if (itemInCart) {
       itemInCart.quantity += 1;
+    } else {
+      items.push(item);
     }
   }
 }

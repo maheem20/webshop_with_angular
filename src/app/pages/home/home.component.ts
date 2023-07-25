@@ -23,4 +23,7 @@ export class HomeComponent {
   onShowCategory(newCategory: string): void {
     this.category = newCategory;
   }
+
+  onAddToCart(): void { }
+
 }

@@ -14,5 +14,6 @@ export class CartService {
 
   addToCart(item: CartItem): void {
     const items = [...this.cart.value.items];
+    const itemInCart = items.find((_item) => _item.id === item.id);
   }
 }

@@ -7,5 +7,7 @@ import { Cart } from '../models/cart.model';
 })
 export class CartService {
 
+  cart = new BehaviorSubject<Cart>({ items: [] });
+
   constructor() { }
 }

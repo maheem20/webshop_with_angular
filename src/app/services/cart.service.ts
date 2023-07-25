@@ -21,5 +21,6 @@ export class CartService {
       items.push(item);
     }
     this.cart.next({ items });
+    this._snackbar.open('1 item added to cart', 'Ok', { duration: 3000 });
   }
 }

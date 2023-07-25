@@ -11,4 +11,6 @@ export class CartService {
   cart = new BehaviorSubject<Cart>({ items: [] });
 
   constructor(private _snackbar: MatSnackBar) { }
+
+  addToCart(): void { }
 }

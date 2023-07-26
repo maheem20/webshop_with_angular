@@ -17,4 +17,7 @@ export class HeaderComponent {
     return this._cart;
   }
 
+  set cart(cart: Cart) {
+    this._cart = cart;
+
 }

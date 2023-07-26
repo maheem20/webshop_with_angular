@@ -26,6 +26,14 @@ export class HomeComponent {
     this.category = newCategory;
   }
 
-  onAddToCart(product: Product): void { }
+  onAddToCart(product: Product): void {
+    this.cartService.addToCart({
+      product: product.image,
+      name: product.title,
+      price: product.price,
+      quantity: 1,
+      id: product.id
+    });
+  }
 
 }

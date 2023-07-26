@@ -13,4 +13,8 @@ export class HeaderComponent {
 
   @Input()
 
+  get cart(): Cart {
+    return this._cart;
+  }
+
 }

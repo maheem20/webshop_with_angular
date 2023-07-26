@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Cart } from 'src/app/models/cart.model';
 
 @Component({
@@ -10,5 +10,7 @@ import { Cart } from 'src/app/models/cart.model';
 export class HeaderComponent {
   private _cart: Cart = { items: [] };
   itemsQuantity: number = 0;
+
+  @Input()
 
 }

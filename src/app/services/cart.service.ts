@@ -25,5 +25,9 @@ export class CartService {
     console.log(this.cart.value);
   }
 
-  getTotal(items: Array<CartItem>): number { }
+  getTotal(items: Array<CartItem>): number {
+    return items
+      .map((item) => item.quantity * item.price)
+      .reduce((prev, current) => prev + current, 0);
+  }
 }

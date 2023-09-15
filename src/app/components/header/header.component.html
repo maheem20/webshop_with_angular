@@ -3,6 +3,7 @@
     <button mat-icon-button [mat-menu-trigger-for]="menu">
         <mat-icon
             [matBadge]="itemsQuantity"
+            [matBadgeHidden]="!itemsQuantity"
             matBadgeColor="warn"
         >shopping_cart</mat-icon>
     </button>

@@ -34,4 +34,6 @@ export class CartService {
     this.cart.next({ items: [] });
     this._snackbar.open('Cart cleared', 'Ok', { duration: 3000 });
   }
+
+  removeFromCart(item: CartItem): void { }
 }

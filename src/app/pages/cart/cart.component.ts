@@ -42,4 +42,7 @@ export class CartComponent implements OnInit {
     return this.cartService.getTotal(items);
   }
 
+  onClearCart(): void {
+    this.cartService.clearCart();
+  }
 }

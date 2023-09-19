@@ -39,6 +39,8 @@ export class CartService {
     if (itemForRemoval) {
       filteredItems = this.removeFromCart(itemForRemoval, false);
     }
+    this.cart.next({ items: filteredItems });
+    this._snackbar.open('1 item removed from cart', 'Ok', { duration: 3000 });
   }
 
   getTotal(items: Array<CartItem>): number {

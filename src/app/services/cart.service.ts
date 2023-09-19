@@ -30,6 +30,9 @@ export class CartService {
     let filteredItems = this.cart.value.items.map((_item) => {
       if (_item.id === item.id) {
         _item.quantity--;
+        if (_item.quantity === 0) {
+          itemForRemoval = _item;
+        }
       }
       return _item;
     });

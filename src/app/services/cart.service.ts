@@ -24,6 +24,10 @@ export class CartService {
     this._snackbar.open('1 item added to cart', 'Ok', { duration: 3000 });
   }
 
+  removeQuantity(item: CartItem): void {
+    let itemForRemoval: CartItem | undefined;
+  }
+
   getTotal(items: Array<CartItem>): number {
     return items
       .map((item) => item.quantity * item.price)

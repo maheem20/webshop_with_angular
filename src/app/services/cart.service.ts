@@ -56,7 +56,10 @@ export class CartService {
 
   removeFromCart(item: CartItem, update = true): void {
     const filteredItems = this.cart.value.items.filter((_item) => _item.id !== item.id);
+
+    if (update) {
     this.cart.next({ items: filteredItems });
     this._snackbar.open('1 item removed from cart', 'Ok', { duration: 3000 });
+    }
   }
 }

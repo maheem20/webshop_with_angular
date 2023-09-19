@@ -36,6 +36,9 @@ export class CartService {
       }
       return _item;
     });
+    if (itemForRemoval) {
+      filteredItems = this.removeFromCart(itemForRemoval, false);
+    }
   }
 
   getTotal(items: Array<CartItem>): number {
@@ -49,7 +52,7 @@ export class CartService {
     this._snackbar.open('Cart cleared', 'Ok', { duration: 3000 });
   }
 
-  removeFromCart(item: CartItem): void {
+  removeFromCart(item: CartItem, update = true): void {
     const filteredItems = this.cart.value.items.filter((_item) => _item.id !== item.id);
     this.cart.next({ items: filteredItems });
     this._snackbar.open('1 item removed from cart', 'Ok', { duration: 3000 });

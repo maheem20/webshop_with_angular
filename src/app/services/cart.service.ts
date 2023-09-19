@@ -26,6 +26,13 @@ export class CartService {
 
   removeQuantity(item: CartItem): void {
     let itemForRemoval: CartItem | undefined;
+
+    let filteredItems = this.cart.value.items.map((_item) => {
+      if (_item.id === item.id) {
+        _item.quantity--;
+      }
+      return _item;
+    });
   }
 
   getTotal(items: Array<CartItem>): number {

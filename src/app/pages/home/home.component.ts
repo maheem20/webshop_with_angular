@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   getProducts(): void {
-    this.productsSubscription = this.storeService.getAllProducts(this.count, this.sort) // the productsSubscription property is also assigned the subscription object returned by the subscribe method, which can be used to unsubscribe from the Observable later
+    this.productsSubscription = this.storeService.getAllProducts(+this.count, this.sort) // the productsSubscription property is also assigned the subscription object returned by the subscribe method, which can be used to unsubscribe from the Observable later
       .subscribe((_products) => {
         this.products = _products;
       });

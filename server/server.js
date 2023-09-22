@@ -30,3 +30,5 @@ app.post('/checkout', async (req, res) => {
         next(error);
     }
 });
+
+app.listen(4242, () => console.log('Running on port 4242'));

@@ -9,3 +9,5 @@ app.use(bodyParser.json());
 app.use(cors({ origin: true, credentials: true }));
 
 const stripe = require('stripe')('secret_key');     // add secret key here
+
+app.post('/checkout', async (req, res) => { });

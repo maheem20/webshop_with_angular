@@ -26,5 +26,7 @@ app.post('/checkout', async (req, res) => {
             cancel_url: 'http://localhost:4242/cancel.html',
         });
         res.status(200).json(session);
+    } catch (error) {
+        next(error);
     }
 });

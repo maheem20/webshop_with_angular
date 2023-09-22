@@ -65,6 +65,9 @@ export class CartComponent implements OnInit {
       items: this.cart.items
     }).subscribe(async (res: any) => {
       let stripe = await loadStripe('publishable_key'); // replace with publishable key
+      stripe.redirectToCheckout({
+        sessionId: res.id
+      });
     });
   }
 }

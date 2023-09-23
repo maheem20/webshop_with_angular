@@ -11,15 +11,18 @@ app.use(cors({ origin: true, credentials: true }));
 const stripe = require('stripe')('secret_key');     // add secret key here
 
 app.post('/checkout', async (req, res) => {
-    try{
+    try {
         const session = await stripe.checkout.sessions.create({
             line_items: req.body.line_items.map((item) => ({
-                currency: 'usd',
-                product_data: {
-                    name: item.name,
-                    images: [item.product]
+                price_data: {
+                    currency: 'usd',
+                    product_data: {
+                        name: item.name,
+                        images: [item.product],
+                    },
+                    unit_amount: item.price * 100,
                 },
-                unit_amount: item.price * 100,
+                quantity: item.quantity,
             })),
             mode: 'payment',
             success_url: 'http://localhost:4242/success.html',
